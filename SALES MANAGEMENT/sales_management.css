@@ -1,0 +1,426 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: arial;
+}
+
+body{
+    margin:0px;
+    width:100%;
+    background: whitesmoke;
+}
+
+.dash-div{
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    width:17%;
+    height:800px;
+    padding:20px;
+    border:0px solid red;
+    position:fixed;top:0;
+}
+.dash-div h2{
+    text-align: center;
+    color:goldenrod;
+    border:0px solid red;
+    padding:20px;
+
+}
+
+.dash-div h2:hover{
+    color:gold;
+    background-color: rgba(100,0,50,0.5);
+}
+
+
+
+.but{
+    width:90%;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:2px solid rgb(100,0,50);
+    border-radius: 30px;
+    padding:15px;
+    color:goldenrod;
+    font-size: 15px;
+    margin:10px;
+    margin-top:30px;
+}
+
+.but:hover{
+    background: rgb(150,0,50);
+    color:gold;
+}
+
+.but a{
+    color:goldenrod;
+    text-decoration: none;
+}
+
+.but a:hover{
+    color:gold;
+}
+.pre-div{
+    width:80%;
+    float:left;
+    margin:20px;
+    margin-left:18%;
+}
+
+.pro-div{
+    width:100%;
+    margin:0px;
+    padding:20px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:1px solid green;
+    border-radius:50px;
+    float:left;
+}
+
+.pro-div h1{
+    margin:15px;
+    text-align:center;
+    color:goldenrod;
+}
+
+.pro-div h1:hover{
+    color:gold;
+}
+
+.pro-div form table{
+    float:left;
+    width:50%;
+}
+
+.pro-div form table tr td{
+    padding:10px;
+    border:0px solid red;
+    color:goldenrod;
+}
+.pro-div form table tr td:hover{
+    color:gold;
+}
+
+.pro-div form table tr td input{
+    padding:15px;
+    border-radius: 10px;
+}
+
+.pro-div form table tr td input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.pro-div form table tr td input[type="file"]{
+    background-color: whitesmoke;
+    color:goldenrod;
+    width:80%;
+}
+.pro-div form table tr td input[type="file"]:hover{
+    color:gold;
+}
+
+.add-but-div{
+    width:100%;
+    text-align:center;
+    float:left;
+    margin-top:30px;
+}
+
+.add-but{
+    padding:20px;
+    border-radius:10px;
+    width:20%;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(0,50,100);
+    background:rgb(100,0,50);
+}
+
+.add-but:hover{
+    color:gold;
+    background: rgb(150,0,50);
+    border:2px solid rgb(150,0,50);
+}
+
+.rec-div{
+    padding:20px;
+    width:100%;
+    height:850px;
+    background:linear-gradient(to bottom,rgb(255,255,255),rgb(230,230,230));
+    border-radius:50px;
+    float:left;
+}
+
+
+.rec-div h2{
+    text-align: center;
+    color:goldenrod;
+    padding:10px;
+}
+
+.rec-div h2:hover{
+    color:gold;
+}
+
+.rec-div table {
+    float:left;    
+}
+
+.rec-div table tr td{
+    color:black;
+    margin-top:20px;
+    font-size: 20px;
+    text-indent:20px;
+    padding: 20px;
+    text-transform:lowercase;
+}
+
+.rec-div p{
+    color:black;
+    margin-top:20px;
+    font-size: 20px;
+    text-indent:20px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.rec-div table tr td:hover{
+    color:gold;
+}
+
+.rec-div span{
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pim{
+    width:100%;
+    height:60vh;
+    float:left;
+    border-radius:20px; 
+    visibility: visible;
+}
+
+.pim-div{
+    width:100%;
+    float:left;
+    margin-top:20px;
+}
+
+
+.gut{
+    width:100%;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:2px solid rgb(100,0,50);
+    border-radius: 30px;
+    color:goldenrod;
+    font-size: 15px;
+    padding:5px;
+}
+
+.gut:hover{
+    background: rgb(150,0,50);
+}
+
+.gut a{
+    color:goldenrod;
+    text-decoration: none;
+}
+
+.gut a:hover{
+    color:gold;
+}
+
+.dre-div{
+    width:80%;
+    float:left;
+    margin-left:18%;    
+    margin-top:20px;
+}
+
+#beef td{
+    font-weight: bolder;
+    background:rgb(100,0,50);
+    color:goldenrod;
+    border-radius:5px;
+    text-align: center;
+    padding:15px;
+}
+
+#beef td:hover{
+    color:gold;
+    background: rgb(150,0,50);
+}
+
+.dre-div table{
+    background:linear-gradient(to bottom,rgb(255,255,255),rgb(230,230,230));
+    width:100%;
+}
+
+.dre-div table tr td:hover{
+    color:rgb(150,0,50);
+}
+
+.beef td{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    padding:15px;
+    border-radius:5px;
+}
+
+
+.beef:nth-child(odd){
+    background:rgb(230,230,230);
+}
+
+.beef:nth-child(even){
+    background:rgb(255,255,255);
+    
+}
+
+.product-sales{
+    width:100%;
+    float:left;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 15px 0px rgb(216, 216, 216);
+    padding:10px;
+    border-radius: 20px;
+    height:200px;
+}
+.product-sales div{
+    width:50%;
+    float:left;
+}
+
+.detail-divs{
+    float:left;
+    box-shadow: 0px 2px 15px 0px rgb(216, 216, 216);
+    width:30%;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border-radius:20px;
+    height:150px;
+    margin:20px;
+}
+
+.detail-divs p{
+    text-align: center;
+    color:whitesmoke;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.dis{
+    display:block;
+}
+
+.sel-prod{
+    visibility: visible;
+    border:1px solid green;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    padding:30px;
+    width:100%;
+    color:goldenrod;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.sel-prod p:hover{
+    color:gold;
+}
+
+.mini-sel-prod{
+    visibility: visible;  
+}
+
+.sel-prod button{
+    padding:10px;
+    border-radius:20px;
+    width:30%;
+    font-size: 15px;
+    margin-left: 400px;
+    margin-top:10px;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(100,0,50);
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+}
+
+.mini-sel-prod select{
+    padding:10px;
+    border-radius: 10px;
+}
+
+.mini-sel-prod select:focus{
+    outline:none;
+}
+
+.sel-prod button:hover{
+    color:gold;
+    background: rgb(150,0,50);
+    border:2px solid rgb(150,0,50);
+}
+
+.dis{
+    margin-top: 40px;
+    padding:20px;
+    width:100%;
+    height:650px;
+    border-radius: 20px;
+    color:goldenrod;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+}
+
+.dis h2{
+    width:100%;
+    text-align: center;
+    padding-bottom:20px;
+}
+
+.dis h2:hover{
+    color:gold;
+}
+
+.dis button{
+    padding:10px;
+    border-radius:20px;
+    width:30%;
+    font-size: 15px;
+    margin-left: 450px;
+    margin-top:20px;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(100,0,50);
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+}
+
+
+.dis button:hover{
+    color:gold;
+    background: rgb(150,0,50);
+    border:2px solid rgb(150,0,50);
+}
+
+.dis table tr td{
+    padding:5px;
+    padding-bottom: 20px;
+    font-size:15px;
+}
+
+.dis table tr td:hover{
+    color:gold;
+}
+
+.dis form table tr td input{
+    padding:15px;
+    border-radius: 10px;
+    width:90%;
+
+}
+
+.dis form table tr td input:focus{
+    outline:none;
+    box-shadow: 0px 0px 5px 0px black;
+}

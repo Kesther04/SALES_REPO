@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: arial;
+}
+
+body{
+    margin:0;
+    width:100%;
+    background: whitesmoke;
+}
+
+.login-sec{
+    width:40%;
+    margin:100px;
+    margin-left:450px;
+    height:600px;
+    border-radius:60px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    float:left;
+}
+
+.msg-log{
+    width:100%;
+    color:red;
+    text-align: center;
+}
+
+.login-sec h1{
+    text-align: center;
+    padding:20px;
+    margin:10px;
+    color:goldenrod;
+}
+
+.login-sec h1:hover{
+    color:gold;
+}
+
+.login-sec table{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.login-sec table tr td{
+    font-size: 20px;
+    margin:20px;
+    padding:20px;
+    color:goldenrod;
+}
+
+.login-sec table tr td a{
+    color:goldenrod;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.login-sec table tr td a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+
+.login-sec table tr td:hover{
+    color:gold;
+}
+
+.login-sec table tr td input {
+    padding:15px;
+    border-radius: 15px;
+    width:300px;
+}
+
+.login-sec table tr td input:focus{
+    outline:none;
+}
+
+.btn-div{
+    width:100%;
+    padding:10px;
+    text-align: center;
+}
+
+.btn{
+    padding:15px;
+    width:200px;
+    color:goldenrod;
+    border-radius:30px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:2px solid rgb(100,0,50);
+}
+
+.btn:hover{
+    background: rgb(150,0,50);
+    color:gold;
+}
+
+.form-sec{
+    width:40%;
+    margin-top: 50px;
+    margin-left:450px;
+    height:700px;
+    border-radius:60px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    float:left;
+}
+
+.form-sec h1{
+    text-align: center;
+    padding:20px;
+    margin:10px;
+    color:goldenrod;
+}
+
+.form-sec h1:hover{
+    color:gold;
+}
+
+.form-sec table{
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+.form-sec table tr td{
+    font-size: 20px;
+    margin:20px;
+    padding:20px;
+    color:goldenrod;
+}
+
+.form-sec table tr td a{
+    color:goldenrod;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.form-sec table tr td a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+
+.form-sec table tr td:hover{
+    color:gold;
+}
+
+.form-sec table tr td input {
+    padding:15px;
+    border-radius: 15px;
+    width:300px;
+}
+
+.form-sec table tr td input:focus{
+    outline:none;
+}
+
+
+.form-sec table tr td select {
+    padding:15px;
+    border-radius: 15px;
+    width:300px;
+}
+
+.form-sec table tr td select:focus{
+    outline:none;
+}
