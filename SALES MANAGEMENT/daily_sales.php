@@ -1,3 +1,8 @@
+<?php session_start();
+if(!isset($_SESSION['id'])){
+    header('location:per_sales_login_admin.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +17,7 @@
 
     <?php 
         $con = new mysqli("localhost","root","","SALES");
-        $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE");
+        $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE ");
         if ($sel) {
             echo "<div class='sel-prod' style='margin-left:18%;width:80%;'>";
             echo "<div class='mini-sel-prod'>";
@@ -37,6 +42,9 @@
         } 
     ?>
 
-    <?php require("full_daily_sales.php") ?>
+    
+    <?php 
+        require("full_daily_sales_admin.php"); 
+    ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 <?php if ($_SERVER['REQUEST_METHOD']=="POST") { ?>
     <div class="dis">
-    <form name="prx-form" id="prx-form" action="add_sold" method="post">
+    <form name="prx-form" id="prx-form" action="add_sold_admin" method="post">
         <table>
         <?php
         $con = new mysqli("localhost","root","","SALES");
@@ -24,9 +24,10 @@
             <td>TOTAL  AMOUNT:</td> <td><input type="text" size="25" name="ta" required readonly></td> </tr>
         <tr><td>BALANCE:</td> <td><input type="text" size="25" name="bal" readonly required></td>
         <input type="hidden" name="status">
-        <input type="hidden" value="<?php echo $_SESSION['name']; ?>" name="rep">
+        <input type="hidden" value="<?php echo  $_SESSION['name']; ?>" name="rep">
         <input type="hidden" value="<?php echo  "$_SESSION[id] $_SESSION[email]"; ?>" name="dep">
 
+       
         <div>
             <td>CUSTOMER NAME:</td> <td><input type="text" size="25" name="cname" required></td>
 

@@ -12,7 +12,7 @@
         
         <?php 
         $con = new mysqli("localhost","root","","SALES");
-        $sel = $con->query("SELECT * FROM sales_registration WHERE DATE='$_POST[wed]' AND SOLD_BY_ID='$_SESSION[id] $_SESSION[email]' ");
+        $sel = $con->query("SELECT * FROM sales_registration WHERE DATE='$_POST[wed]'  ");
         if ($sel) {
             echo "<div class='dre-div'>";
             echo "<table>";

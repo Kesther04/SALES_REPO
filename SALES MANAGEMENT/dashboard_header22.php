@@ -13,10 +13,13 @@
        <h2>DASHBOARD</h2>
 
        <button class="but"><a href="add_product">ADD PRODUCT</a></button>
-       <button class="but"><a href="product_table" target="blank"> PRODUCTS</a></button>
-       <button class="but"><a href="transaction" target="=-blank">TRANSACTION HISTORY</a></button>
-       <button class="but"><a href="daily_sales" target="--blank">VIEW DAILY SALES</a></button>
-       <button class="but"><a href="sales_update" target="---blank">UPDATE SALES</a></button>
+       <button class="but"><a href="product_table" > PRODUCTS</a></button>
+       <button class="but"><a href="add_sales_admin">ADD SALES</a></button>
+       <button class="but"><a href="view_sold_product_admin">VIEW SOLD PRODUCT</a></button>
+       <button class="but"><a href="transaction" >TRANSACTION HISTORY</a></button>
+       <button class="but"><a href="daily_sales" >VIEW DAILY SALES</a></button>
+       <button class="but"><a href="sales_update">UPDATE SALES</a></button>
+       <button class="but" onclick="if(window.confirm('ARE YOU SURE YOU WANT TO LOG OUT')){window.location='per_sales_login_admin.php';}">LOG OUT</button>
 </div>
 
 </body>

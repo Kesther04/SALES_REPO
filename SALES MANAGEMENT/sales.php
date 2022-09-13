@@ -43,6 +43,8 @@ AMOUNT_PAID varchar(120)not null,
 QUANTITY_OF_PRODUCT_BOUGHT varchar(120)not null,
 BALANCE varchar(120)not null,
 STATUS_OF_PRODUCT varchar(120)not null,
+SOLD_BY varchar(120)not null,
+SOLD_BY_ID varchar(120)not null,
 CUSTOM_NAME varchar(120)not null,
 PHONE_NUMBER varchar(120)not null,
 DATE varchar(120)not null,
@@ -69,4 +71,42 @@ if ($tab) {
 }else {
     echo "<p>3rd table not created</p>";
 }
+
+
+$t = $con->query("CREATE TABLE if not exists admin_registration_tb
+(ID int(90)not null primary key auto_increment,
+FULLNAME varchar(120)not null,
+GENDER varchar(120)not null,
+EMAIL_ADDRESS varchar(120)not null,
+PASSWORD varchar(120)not null,
+PHONE_NUMBER varchar(120)not null,
+DATE varchar(120)not null,
+TIME varchar(120)not null)ENGINE=innoDB");
+
+if ($t) {
+    echo "<p>4th table created successfully</p>";
+}else {
+    echo "<p>4th table not created</p>";
+}
+
+
+$tbl = $con->query("CREATE TABLE if not exists transactions
+(ID int(90)not null primary key auto_increment,
+PRODUCT_ID varchar(120)not null,
+PRODUCT_NAME varchar(120)not null,
+TOTAL_AMOUNT varchar(120)not null,
+AMOUNT_PAID varchar(120)not null,
+QUANTITY_OF_PRODUCT_REMAINING varchar(120)not null,
+QUANTITY_OF_PRODUCT_BOUGHT varchar(120)not null,
+STATUS_OF_PRODUCT varchar(120)not null,
+SALES_STATUS varchar(120)not null,
+DATE varchar(120)not null,
+TIME varchar(120)not null)ENGINE=innoDB");
+
+if ($tbl) {
+    echo "<p>5th table created successfully</p>";
+}else{
+    echo "<p>5th table not created</p>";
+}
+
 ?>

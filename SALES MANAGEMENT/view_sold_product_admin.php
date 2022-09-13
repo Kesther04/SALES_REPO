@@ -1,4 +1,4 @@
-<?php session_start();
+<?php session_start(); 
 if(!isset($_SESSION['id'])){
     header('location:per_sales_login_admin.php');
 }
@@ -9,20 +9,19 @@ if(!isset($_SESSION['id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSACTION</title>
+    <link rel="stylesheet" href="sales_management.css" media="all">
+    <title>SOLD PRODUCTS</title>
 </head>
 <body>
-
     <?php  require("dashboard_header22.php") ?>
 
-    
-    <div>
+        <div>
             
 
             <?php
             $con = new mysqli("localhost","root","","SALES");
             
-            $select = $con->query("SELECT * FROM transactions ");
+            $select = $con->query("SELECT * FROM sales_registration ");
             if($select){
                 echo "<div class='dre-div'>";
                 echo "<table>";
@@ -32,11 +31,11 @@ if(!isset($_SESSION['id'])){
                     <td>PRODUCT_NAME</td> 
                     <td>AMOUNT_PAID</td>
                     <td>TOTAL_AMOUNT</td>
+                    <td>BALANCE</td>
                     <td>PROD.QNTY</td>
                     <td>STATUS_OF_PRODUCT</td>
-                    <td>SALES_STATUS</td>
                     <td>DATE</td>
-                    <td>TIME</td>";
+                    <td>VIEW_OTHER_DETAILS</td>";
                 echo "</tr>";
             
                 while ($row = $select->fetch_assoc()) {
@@ -45,11 +44,11 @@ if(!isset($_SESSION['id'])){
                     <td>$row[PRODUCT_NAME]</td> 
                     <td>$row[AMOUNT_PAID]</td>
                     <td>$row[TOTAL_AMOUNT]</td>
+                    <td>$row[BALANCE]</td>
                     <td>$row[QUANTITY_OF_PRODUCT_BOUGHT]</td>
                     <td>$row[STATUS_OF_PRODUCT]</td>
-                    <td>$row[SALES_STATUS]</td>
                     <td>$row[DATE]</td>
-                    <td>$row[TIME]</td>";
+                        <td><button class='gut'><a href='sales_fields_admin?msg=$row[ID]'>SALES DETAILS</a></button></td>";
                     echo "</tr>";
                     
                 }

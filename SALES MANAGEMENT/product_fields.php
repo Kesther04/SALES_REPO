@@ -1,3 +1,8 @@
+<?php session_start();
+if(!isset($_SESSION['id'])){
+    header('location:per_sales_login_admin.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

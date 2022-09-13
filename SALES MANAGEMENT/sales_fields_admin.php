@@ -1,6 +1,6 @@
 <?php session_start(); 
 if(!isset($_SESSION['id'])){
-    header('location:per_sales_login.php');
+    header('location:per_sales_login_admin.php');
 }
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ if(!isset($_SESSION['id'])){
     <title>SALES FIELDS</title>
 </head>
 <body>
-    <?php  require("dashboard_header.php") ?>
+    <?php  require("dashboard_header22.php") ?>
 
 
 <?php
@@ -41,6 +41,7 @@ if ($sel) {
         <tr><td><span>AMOUNT PAID:</span></td> <td>$row[AMOUNT_PAID]</td></tr>
         <tr><td><span>QUANTITY OF PRODUCT BOUGHT:</span></td> <td>$row[QUANTITY_OF_PRODUCT_BOUGHT]</td></tr>
         <tr><td><span>CUSTOMER'S NAME:</span></td> <td style='text-transform:uppercase;'>$row[CUSTOM_NAME]</td></tr>
+        
         </table>
 
         <table>
@@ -55,8 +56,8 @@ if ($sel) {
         </table>
         
         
-        
         <span id='dex'>$row[SOLD_BY]</span>
+        
         ";
 
         echo "</div>";

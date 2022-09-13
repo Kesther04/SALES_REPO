@@ -21,7 +21,9 @@ if(!isset($_SESSION['id'])){
             <?php
             $con = new mysqli("localhost","root","","SALES");
             
-            $select = $con->query("SELECT * FROM sales_registration");
+
+            
+            $select = $con->query("SELECT * FROM sales_registration WHERE SOLD_BY='$_SESSION[name]'");
             if($select){
                 echo "<div class='dre-div'>";
                 echo "<table>";
