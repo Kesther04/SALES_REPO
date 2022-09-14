@@ -109,4 +109,27 @@ if ($tbl) {
     echo "<p>5th table not created</p>";
 }
 
+
+$deltable = $con->query("CREATE TABLE if not exists DELETE_BIN
+(ID int(90)not null primary key auto_increment,
+PRODUCT_ID varchar(120)not null,
+PRODUCT_NAME varchar(120)not null,
+PRODUCT_BRAND varchar(120)not null,
+PERCENTAGE_DISCOUNT varchar(120)not null,
+COST_PRICE varchar(120)not null,
+PRODUCT_CATEGORY varchar(120)not null,
+PRODUCT_DESCRIPTION varchar(120)not null,
+OPENING_STOCKS varchar(120)not null,
+STOCK_QUANTITY varchar(120)not null,
+DISCOUNT_PRICE varchar(120)not null,
+SELLING_PRICE varchar(120)not null,
+PRODUCT_IMAGE varchar(120)not null,
+DATE varchar(120)not null,
+TIME varchar(120)not null)ENGINE=innoDB");
+
+if ($deltable) {
+    echo "<p>table created successfully</p>";
+}else{
+    echo "<p>table not created</p>";
+}
 ?>

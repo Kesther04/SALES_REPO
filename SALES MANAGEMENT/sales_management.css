@@ -125,6 +125,39 @@ body{
     margin-top:30px;
 }
 
+.but-but-div{
+    width:100%;
+    text-align:right;
+    float:left;
+    margin-top:30px;
+}
+
+.but-but{
+    padding:20px;
+    border-radius:50px;
+    width:15%;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(100,0,50);
+    background:rgb(100,0,50);
+}
+
+.but-but:hover{
+    color:gold;
+    background: rgb(150,0,50);
+    border:2px solid rgb(150,0,50);
+}
+
+.but-but a{
+    color:goldenrod;
+    text-decoration: none;
+}
+
+.but-but a:hover{
+    color:gold;
+    text-decoration: none;
+}
+
 .add-but{
     padding:20px;
     border-radius:10px;

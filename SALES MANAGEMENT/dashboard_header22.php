@@ -12,7 +12,7 @@
 <div class="dash-div">
        <h2>DASHBOARD</h2>
 
-       <button class="but"><a href="add_product">ADD PRODUCT</a></button>
+       <button class="but"><a href="add_product">PRODUCT MAN</a></button>
        <button class="but"><a href="product_table" > PRODUCTS</a></button>
        <button class="but"><a href="add_sales_admin">ADD SALES</a></button>
        <button class="but"><a href="view_sold_product_admin">VIEW SOLD PRODUCT</a></button>

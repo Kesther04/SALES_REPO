@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
 <body>
     <?php require("dashboard_header22.php") ?>
 
-<div class="pre-div">
+<div class="pre-div" >
 <div class="pro-div">
     <h1>ADD PRODUCT</h1>
 <form name="product-form" id="product-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" enctype="multipart/form-data">
@@ -150,6 +150,15 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
 </form>
 
 </div>
+
+    <div class="but-but-div">    
+        <button class="but-but"><a href="product_update.php">UPDATE PRODUCT</a></button>
+    </div>
+
+    
+    <div class="but-but-div">    
+        <button class="but-but"><a href="delete_product.php">DELETE PRODUCT</a></button>
+    </div>
 </div>
 
 </body>
