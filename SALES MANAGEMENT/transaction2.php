@@ -22,7 +22,7 @@ if(!isset($_SESSION['id'])){
             <?php
             $con = new mysqli("localhost","root","","SALES");
             
-            $select = $con->query("SELECT * FROM transactions ");
+            $select = $con->query("SELECT * FROM transactions ORDER BY (ID)DESC ");
             if($select){
                 echo "<div class='dre-div'>";
                 echo "<table>";

@@ -99,7 +99,7 @@ body{
     width:40%;
     margin-top: 50px;
     margin-left:450px;
-    height:700px;
+    height:720px;
     border-radius:60px;
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
     float:left;
@@ -164,4 +164,58 @@ body{
 
 .form-sec table tr td select:focus{
     outline:none;
+}
+
+
+#p-pass{
+    visibility: visible;
+}
+
+#tock{
+    display: block;
+    padding:1px;
+}
+#tock input{
+    width:60%;
+}
+#pock input{
+    width:60%;
+}
+
+#pock{
+    display:none;
+    padding:1px;
+}
+
+.change-pass{
+    font-size: 15px;
+    color:goldenrod;
+    border-radius:30px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:2px solid rgb(100,0,50);
+}
+
+.change-pass:hover{
+    background: rgb(150,0,50);
+    color:gold;   
+}
+
+
+.p-a-s{
+    display:block;
+    float:left;
+}
+
+#p-a-t{
+    display:none;
+}
+
+#aaa{
+    display: block;
+    width:30%;
+}
+
+#bbb{
+    display:none;
+    width:30%;
 }

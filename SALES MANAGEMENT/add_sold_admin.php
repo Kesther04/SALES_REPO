@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
                 $cup = $row['STOCK_QUANTITY']-$qpb;
                 $up = $con->query("UPDATE PRODUCT SET STOCK_QUANTITY='$cup' WHERE ID='$pro_id' ");
                 $ins=$con->query("INSERT INTO transactions 
-        (PRODUCT_ID,PRODUCT_NAME,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_REMAINING,QUANTITY_OF_PRODUCT_BOUGHT,STATUS_OF_PRODUCT,SALES_STATUS,DATE,TIME)VALUE('$pro_id','$pn','$ta','$ap','$cup','$qpb','$status','SALES_INSERTED','$date','$time')");
+        (PRODUCT_ID,PRODUCT_NAME,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_REMAINING,QUANTITY_OF_PRODUCT_BOUGHT,STATUS_OF_PRODUCT,SALES_STATUS,DATE,TIME)VALUE('$pro_id','$pn','$ta','$ap','$cup','$qpb','$status','SALES INSERTED','$date','$time')");
             }
         }
         

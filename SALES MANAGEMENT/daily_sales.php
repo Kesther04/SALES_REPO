@@ -17,7 +17,7 @@ if(!isset($_SESSION['id'])){
 
     <?php 
         $con = new mysqli("localhost","root","","SALES");
-        $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE ");
+        $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE ORDER BY (ID)DESC");
         if ($sel) {
             echo "<div class='sel-prod' style='margin-left:18%;width:80%;'>";
             echo "<div class='mini-sel-prod'>";

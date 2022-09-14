@@ -39,7 +39,19 @@
             </tr>
 
             <tr>
-                <td>PASSWORD:</td>  <td><input type="password"  name="pass"></td>
+                <td>PASSWORD:</td>
+
+                <td>
+                <span>
+                    <input type="password"  name="pass" id="p-p-p" onclick="record()">
+                </span>
+                
+                <span id="p-a-t">
+                    <input type="button" value="SHOW" onclick="login()" id="aaa"> 
+                    <input type="button" value="SHOW" onclick="lob()" id="bbb">
+                </span>
+                </td>
+            <script src="reed.js"></script>
             </tr>
 
             <tr>

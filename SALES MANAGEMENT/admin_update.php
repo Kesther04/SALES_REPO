@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
         $up = $con->query("UPDATE sales_registration SET QUANTITY_OF_PRODUCT_BOUGHT='$qpb',TOTAL_AMOUNT='$ta',AMOUNT_PAID='$ap',BALANCE='$bal',STATUS_OF_PRODUCT='$status'  WHERE ID='$_POST[prod_code]' ");
         if ($up) {
             $ins=$con->query("INSERT INTO transactions 
-            (PRODUCT_ID,PRODUCT_NAME,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_REMAINING,QUANTITY_OF_PRODUCT_BOUGHT,STATUS_OF_PRODUCT,SALES_STATUS,DATE,TIME)VALUE('$_POST[prod_id]','$_POST[pn]','$ta','$ap','$cup','$qpb','$status','SALES_UPDATED','$date','$time')");
+            (PRODUCT_ID,PRODUCT_NAME,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_REMAINING,QUANTITY_OF_PRODUCT_BOUGHT,STATUS_OF_PRODUCT,SALES_STATUS,DATE,TIME)VALUE('$_POST[prod_id]','$_POST[pn]','$ta','$ap','$cup','$qpb','$status','SALES UPDATED','$date','$time')");
             //if such sales is updated successfully    
             header("location:sales_update.php?msg='sales updated'");
         }else {

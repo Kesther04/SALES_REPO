@@ -34,8 +34,14 @@ session_destroy();
         
         <tr>
             <td>PASSWORD:</td> 
-            <td><input type="password" name="pass" placeholder="PASSWORD"></td>
+            <td><input type="password" name="pass" placeholder="PASSWORD" id="p-pass"></td>
         </tr>
+        
+        <tr>            
+            <td id="tock"><input type="button" value="TEXT" class="change-pass"   onclick="login()"></td>
+            <td id="pock"><input type="button" value="TEXT" class="change-pass"   onclick="lob()"></td>
+        </tr>
+        <script src="reg.js"></script>
 
         <tr>
             <td><i><a href="per_sales_signup.php" title="If you don't have an account with us click here">CREATE ACCOUNT</a></i></td>

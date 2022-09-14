@@ -18,12 +18,12 @@ if(!isset($_SESSION['id'])){
     
     <div>
             
-
             <?php
             $con = new mysqli("localhost","root","","SALES");
             
-            $select = $con->query("SELECT * FROM transactions ");
+            $select = $con->query("SELECT * FROM transactions ORDER BY (ID)DESC ");
             if($select){
+           
                 echo "<div class='dre-div'>";
                 echo "<table>";
                 echo "<tr id='beef'>";
@@ -38,6 +38,7 @@ if(!isset($_SESSION['id'])){
                     <td>DATE</td>
                     <td>TIME</td>";
                 echo "</tr>";
+
             
                 while ($row = $select->fetch_assoc()) {
                     echo "<tr class='beef'>";
@@ -61,7 +62,7 @@ if(!isset($_SESSION['id'])){
             ?>
             
             
-        </div>
+    </div>
 
 </body>
 </html>

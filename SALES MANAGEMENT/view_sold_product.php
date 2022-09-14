@@ -23,7 +23,7 @@ if(!isset($_SESSION['id'])){
             
 
             
-            $select = $con->query("SELECT * FROM sales_registration WHERE SOLD_BY='$_SESSION[name]'");
+            $select = $con->query("SELECT * FROM sales_registration WHERE SOLD_BY='$_SESSION[name]' ORDER BY (ID)DESC");
             if($select){
                 echo "<div class='dre-div'>";
                 echo "<table>";
