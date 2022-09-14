@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $hour = date("h")+1;
     $time = date("$hour:i:s.a");
 
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
 
     $ins = $con->query("INSERT INTO registration_tb(FULLNAME,GENDER,EMAIL_ADDRESS,PASSWORD,PHONE_NUMBER,DATE,TIME)VALUE('$full','$gender','$email','$pass','$pno','$date','$time')");
 

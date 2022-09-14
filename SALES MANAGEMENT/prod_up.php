@@ -3,7 +3,7 @@
 <div class="pro-div" style="margin-top:20px;">
 
 <?php
-    $con = new mysqli("localhost","root","","SALES");
+     require("database_connection.php");
     $select = $con->query("SELECT * FROM PRODUCT WHERE ID ='$_POST[id]' ");
     if ($select) {
         while ($row=$select->fetch_assoc()) {

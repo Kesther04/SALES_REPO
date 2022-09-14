@@ -16,7 +16,7 @@ if(!isset($_SESSION['id'])){
     <?php  require("dashboard_header22.php") ?>
 
     <?php 
-        $con = new mysqli("localhost","root","","SALES");
+         require("database_connection.php");
         $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE ORDER BY (ID)DESC");
         if ($sel) {
             echo "<div class='sel-prod' style='margin-left:18%;width:80%;'>";

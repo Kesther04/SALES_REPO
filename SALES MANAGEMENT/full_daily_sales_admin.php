@@ -11,7 +11,7 @@
         
         
         <?php 
-        $con = new mysqli("localhost","root","","SALES");
+         require("database_connection.php");
         $sel = $con->query("SELECT * FROM sales_registration WHERE DATE='$_POST[wed]'  ");
         if ($sel) {
             echo "<div class='dre-div'>";

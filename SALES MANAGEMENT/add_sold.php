@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $hour=date("h")+1;
     $time=date("$hour:i:s.a");
 
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
 
     $insert = $con->query("INSERT INTO sales_registration
     (PRODUCT_ID,PRODUCT_NAME,COST_PRICE,SELLING_PRICE,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_BOUGHT,BALANCE,STATUS_OF_PRODUCT,SOLD_BY,SOLD_BY_ID,CUSTOM_NAME,PHONE_NUMBER,DATE,TIME)VALUE('$pro_id','$pn','$cp','$sp','$ta','$ap','$qpb','$bal','$status','$rep','$dep','$cname','$pno','$date','$time')");

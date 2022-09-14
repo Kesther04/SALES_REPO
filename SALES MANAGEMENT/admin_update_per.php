@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $hour=date("h")+1;
     $time=date("$hour:i:s.a");
     
-    $con = new mysqli("localhost","root","","SALES");
-
+    require("database_connection.php");
+    
     $sel = $con->query("SELECT * FROM PRODUCT WHERE ID='$_POST[prod_id]' ");
     if ($sel) {
         //if selected successfully

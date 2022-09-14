@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $time=date("$hour:i:s.a");
 
 
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
     
     $del = $con->query("DELETE FROM PRODUCT");
 

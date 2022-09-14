@@ -5,7 +5,7 @@
     <form name="prx-form" id="prx-form" action="admin_update_per.php" method="post">
         <table>
     <?php
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
     
     $select = $con->query("SELECT * FROM sales_registration WHERE ID='$_POST[id]'");
     if($select){

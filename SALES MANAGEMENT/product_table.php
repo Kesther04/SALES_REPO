@@ -19,8 +19,8 @@ if(!isset($_SESSION['id'])){
 
 <div class="re-div">
 <?php
-$con = new mysqli("localhost","root","","SALES");
-
+ require("database_connection.php");
+ 
 $select = $con->query("SELECT * FROM PRODUCT");
 if($select){
     echo "";

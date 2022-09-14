@@ -20,7 +20,7 @@ if(!isset($_SESSION['id'])){
             
 
             <?php
-            $con = new mysqli("localhost","root","","SALES");
+            require("database_connection.php");
             
             $select = $con->query("SELECT * FROM transactions ORDER BY (ID)DESC ");
             if($select){

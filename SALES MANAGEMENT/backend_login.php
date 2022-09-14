@@ -4,7 +4,7 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD']=="POST") {
 
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
 
     $email = $_POST['email'];
     $pass = $_POST['pass'];

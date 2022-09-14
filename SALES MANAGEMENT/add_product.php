@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $hour=date("h")+1;
     $time=date("$hour:i:s.a");
    
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
 
     if ($filesize > 10000000000) {
     
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     <h1>ADD PRODUCT</h1>
 <form name="product-form" id="product-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" enctype="multipart/form-data">
     <?php    
-  $con = new mysqli("localhost","root","","SALES");
+  require("database_connection.php");
 
     if(isset($_GET['m'])){}
     if(isset($_GET['msg'])){}

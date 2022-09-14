@@ -4,7 +4,7 @@
     <form name="prx-form" id="prx-form" action="add_sold_admin" method="post">
         <table>
         <?php
-        $con = new mysqli("localhost","root","","SALES");
+         require("database_connection.php");
 
         $sel = $con->query("SELECT * FROM PRODUCT WHERE ID='$_POST[id]'");
         if ($sel) {

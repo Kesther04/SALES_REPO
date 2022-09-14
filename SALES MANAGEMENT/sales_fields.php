@@ -18,7 +18,7 @@ if(!isset($_SESSION['id'])){
 
 <?php
 
-$con = new mysqli("localhost","root","","SALES");
+require("database_connection.php");
 
 $sel = $con->query("SELECT * FROM sales_registration WHERE ID='$_GET[msg]' ");
 

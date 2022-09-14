@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli("localhost","root","","SALES");
+ require("database_connection.php");
 if ($con) {
     echo "connection successsful";
 }

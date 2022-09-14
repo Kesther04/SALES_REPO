@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     $mp = $_POST['mp'];
    
    
-    $con = new mysqli("localhost","root","","SALES");
+    require("database_connection.php");
     
     $sel = $con->query("SELECT * FROM PRODUCT WHERE ID ='$_POST[id]' ");
     if ($sel) {

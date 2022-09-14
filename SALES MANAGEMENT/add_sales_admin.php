@@ -23,7 +23,7 @@ if(!isset($_SESSION['id'])){
             
             <p>SELECT PRODUCT:
             <?php
-            $con = new mysqli("localhost","root","","SALES");
+             require("database_connection.php");
             $select = $con->query("SELECT * FROM PRODUCT");
             if ($select) {
                 echo "<span class='mini-sel-prod'>";

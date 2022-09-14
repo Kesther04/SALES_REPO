@@ -3,7 +3,7 @@
 <div class="pro-div" style="margin-top:20px;">
 
 <?php
-    $con = new mysqli("localhost","root","","SALES");
+     require("database_connection.php");
     $select = $con->query("SELECT * FROM PRODUCT WHERE ID ='$_POST[id]' ");
     if ($select) {
         while ($row=$select->fetch_assoc()) {
@@ -14,7 +14,7 @@
 <?php echo "<img src='images/$row[PRODUCT_IMAGE]' style='border-radius:20px;width:250px;'>"; ?>
 </div>
 
-<h1>UPDATE PRODUCT</h1>
+<h1>PRODUCT DETAILS</h1>
 
 <form name="prod-form" id="product-form" method="post" action="backend_del.php">
 
