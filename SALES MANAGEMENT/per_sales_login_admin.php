@@ -51,9 +51,9 @@ session_destroy();
 
     
 
-        <div class="btn-div">
-            <button class="btn">ENTER</button>
-        </div>
+    <div class="btn-div">
+        <button class="btn">ENTER</button>
+    </div>
     
     </form>
 

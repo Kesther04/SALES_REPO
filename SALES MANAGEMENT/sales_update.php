@@ -14,17 +14,14 @@ if(!isset($_SESSION['id'])){
 <body>
     <?php  require("dashboard_header22.php") ?>
 
-    
     <section style="width:81%;height:900px;margin-left:18%;">
-    
+
         <div class="sel-prod">
         
-            <form name="up-form" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+            <form name="up-form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
             
-            <p>PRODUCT CODE: <span class="mini-sel-prod"><input type="number" name="id" required>
-            </span></p>
+            <p>PRODUCT CODE: <span class="mini-sel-prod"><input type="number" name="id" required></span> </p>
            
-            
             <p><button>VIEW PRODUCT</button></p>
             
             </form>

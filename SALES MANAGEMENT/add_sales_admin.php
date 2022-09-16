@@ -21,7 +21,8 @@ if(!isset($_SESSION['id'])){
         
             <form name="prd-form" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
             
-            <p>SELECT PRODUCT:
+            <p>
+                SELECT PRODUCT:
             <?php
              require("database_connection.php");
             $select = $con->query("SELECT * FROM PRODUCT");
@@ -47,6 +48,7 @@ if(!isset($_SESSION['id'])){
             </form>
 
         </div>
+        
         <?php require("add_salx_admin.php") ?>
     
     </section>

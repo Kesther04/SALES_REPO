@@ -39,13 +39,20 @@
 
     <tr>
         <td>QUANTITY OF PRODUCT:</td> 
-        <td><input type="text" required size="25" name="qpb" onkeyup="total()" value="<?php echo $des['QUANTITY_OF_PRODUCT_BOUGHT']; ?>"></td> 
+        <td>
+        <?php $dac=$des['QUANTITY_OF_PRODUCT_BOUGHT']; ?>           
+           
+           <select required   name="qpb" onchange="total()">
+               <?php for ($a=$dac; $a >= 0; $a--) { ?> 
+               <option><?php echo $a; ?></option>
+               <?php } ?>
+        </td> 
         
         <td>AMOUNT PAID:</td> 
-        <td><input type="text" size="25" name="ap" required onkeyup="bold()" value="<?php echo $des['AMOUNT_PAID']; ?>"></td> 
+        <td><input type="number" size="25" name="ap" required onkeyup="bold()" value="<?php echo $des['AMOUNT_PAID']; ?>"></td> 
         
         <td>TOTAL  AMOUNT:</td> 
-        <td><input type="text" size="25" required readonly name="ta" value="<?php echo $des['TOTAL_AMOUNT']; ?>"></td> 
+        <td><input type="number" size="25" required readonly name="ta" value="<?php echo $des['TOTAL_AMOUNT']; ?>"></td> 
     </tr>
     
     <tr>

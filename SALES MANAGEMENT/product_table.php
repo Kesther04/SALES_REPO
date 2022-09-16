@@ -49,10 +49,10 @@ if($select){
             <td>$row[COST_PRICE]NGN</td> 
             <td>$row[SELLING_PRICE]NGN</td>";  
  
-            $sel = $con->query("SELECT *, SUM(TOTAL_AMOUNT), SUM(QUANTITY_OF_PRODUCT_BOUGHT) FROM sales_registration WHERE PRODUCT_ID='$row[ID]'");
+            $sel = $con->query("SELECT *, SUM(AMOUNT_PAID), SUM(QUANTITY_OF_PRODUCT_BOUGHT) FROM sales_registration WHERE PRODUCT_ID='$row[ID]'");
             if ($sel) {
                     $res=$sel->fetch_assoc();       
-                    $am=$res['SUM(TOTAL_AMOUNT)'];
+                    $am=$res['SUM(AMOUNT_PAID)'];
                     $qb=$res['SUM(QUANTITY_OF_PRODUCT_BOUGHT)']; 
                     echo "<td>";
                     echo $am; 
@@ -70,10 +70,10 @@ if($select){
         <td align=right>TOTAL PROFIT</td>
        ";
         
-        $sel = $con->query("SELECT *, SUM(TOTAL_AMOUNT), SUM(QUANTITY_OF_PRODUCT_BOUGHT) FROM sales_registration WHERE PRODUCT_ID='$row[ID]'");
+        $sel = $con->query("SELECT *, SUM(AMOUNT_PAID), SUM(QUANTITY_OF_PRODUCT_BOUGHT) FROM sales_registration WHERE PRODUCT_ID='$row[ID]'");
         if ($sel) {
                 $res=$sel->fetch_assoc();       
-                $am=$res['SUM(TOTAL_AMOUNT)'];
+                $am=$res['SUM(AMOUNT_PAID)'];
                 $qb=$res['SUM(QUANTITY_OF_PRODUCT_BOUGHT)']; 
                 echo "<td bgcolor='darkcyan'>";
                 echo ($am)-($qb*$row['COST_PRICE']); 

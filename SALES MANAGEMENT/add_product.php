@@ -90,13 +90,13 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     
     <tr>
         <td>PERCENTAGE DISCOUNT:</td> 
-        <td><input type="text" size="20" name="pdis"></td>
+        <td><input type="number" size="20" name="pdis"></td>
     </tr>
     
     
     <tr>
         <td>COST PRICE:</td>
-        <td><input type="text" size="20" name="cp"></td>
+        <td><input type="number" size="20" name="cp"></td>
     </tr>
     
     
@@ -126,13 +126,13 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     
     <tr>
         <td>DISCOUNT PRICE:</td> 
-        <td><input type="text" size="20" name="dp"></td>
+        <td><input type="number" size="20" name="dp"></td>
      
     </tr>
     
     <tr>
         <td>SELLING PRICE:</td> 
-        <td><input type="text" size="20" name="mp"  onkeyup="discount()"></td>
+        <td><input type="number" size="20" name="mp"  onkeyup="discount()"></td>
         <script src="sales.js"></script>
     </tr>
     

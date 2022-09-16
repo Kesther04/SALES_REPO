@@ -19,10 +19,10 @@
         
         ?>
 
-        <tr><td>QUANTITY OF PRODUCT:</td> <td><input type="text" size="25" name="qpb" required onkeyup="total()" ></td> 
-            <td>AMOUNT PAID:</td> <td><input type="text" size="25" name="ap" required onkeyup="bold()"></td> 
-            <td>TOTAL  AMOUNT:</td> <td><input type="text" size="25" name="ta" required readonly></td> </tr>
-        <tr><td>BALANCE:</td> <td><input type="text" size="25" name="bal" readonly required></td>
+        <tr><td>QUANTITY OF PRODUCT:</td> <td><input type="number" size="25" name="qpb" required onkeyup="total()" ></td> 
+            <td>AMOUNT PAID:</td> <td><input type="number" size="25" name="ap" required onkeyup="bold()"></td> 
+            <td>TOTAL  AMOUNT:</td> <td><input type="number" size="25" name="ta" required readonly></td> </tr>
+        <tr><td>BALANCE:</td> <td><input type="number" size="25" name="bal" readonly required></td>
         <input type="hidden" name="status">
         <input type="hidden" value="<?php echo  $_SESSION['name']; ?>" name="rep">
         <input type="hidden" value="<?php echo  "$_SESSION[id] $_SESSION[email]"; ?>" name="dep">

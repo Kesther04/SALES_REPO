@@ -492,3 +492,15 @@ body{
     outline:none;
     box-shadow: 0px 0px 5px 0px black;
 }
+
+.dis form table tr td select{
+    padding:15px;
+    border-radius: 10px;
+    width:90%;
+
+}
+
+.dis form table tr td select:focus{
+    outline:none;
+    box-shadow: 0px 0px 5px 0px black;
+}

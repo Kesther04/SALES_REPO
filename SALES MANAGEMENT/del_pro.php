@@ -19,6 +19,14 @@
 <form name="prod-form" id="product-form" method="post" action="backend_del.php">
 
 <table>
+<?php
+$sel = $con->query("SELECT * FROM sales_registration WHERE PRODUCT_ID ='$_POST[id]' ");
+if ($sel) {
+    while ($dow=$sel->fetch_assoc()) {
+        echo "<input type='hidden' name='stat' value='$dow[STATUS_OF_PRODUCT]'>";
+    }
+}
+?>
 
 <tr>    
     <td>NAME OF PRODUCT:</td> 
@@ -84,7 +92,7 @@
 <tr>
     
     <td>STOCK QUANTITY:</td>
-    <td><input type="number" size="20"  value="<?php echo $row['STOCK_QUANTITY'] ?>" readonly required></td>
+    <td><input type="number" size="20" name="sop"  value="<?php echo $row['STOCK_QUANTITY'] ?>" readonly required></td>
 
 </tr>
 
