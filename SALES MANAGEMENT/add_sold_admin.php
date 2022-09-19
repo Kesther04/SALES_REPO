@@ -1,5 +1,5 @@
-
 <?php
+   
 if ($_SERVER['REQUEST_METHOD']=="POST") {
     $pro_id = $_POST['pro_id'];
     $pn = $_POST['pn'];
@@ -40,11 +40,79 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
         (PRODUCT_ID,PRODUCT_NAME,TOTAL_AMOUNT,AMOUNT_PAID,QUANTITY_OF_PRODUCT_REMAINING,QUANTITY_OF_PRODUCT_BOUGHT,STATUS_OF_PRODUCT,SALES_STATUS,DATE,TIME)VALUE('$pro_id','$pn','$ta','$ap','$cup','$qpb','$status','SALES INSERTED','$date','$time')");
             }
         }
+
+        echo " 
+        <link rel='stylesheet' href='sales_receipt.css' media='all'>
+        <div class='dis'>
+        <form name='sales_form' action='add_sales_admin.php'>
+        <h2>ELECTRONIC SALES<h2>
+
+        <table style='float:left;'>
+        <tr><td>CUSTOMER DETAILS</td></tr> 
+        <tr><td>$cname</td></tr> 
+        <tr><td>$pno</td></tr>
+        </table>
+
+        <table style='float:right;margin-left:20%;text-align:center;width:40%;'>
+        <tr><td>DATE OF TRANSACTION</td></tr>
+        <tr><td>$date</td></tr>
+        </table>
+            
+        <table width='100%' style='margin-top:20px;float:left;'>    
+                    <tr>
+                        <td>QUANTITY OF PRODUCT</td> 
+                        <td>PRODUCT NAME</td> 
+                        <td>TOTAL AMOUNT PAID</td> 
+                        <td>BALANCE</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>$qpb</td>  
+                        
+                        <td>$pn</td>
+
+                        <td>$ap NGN</td> 
+                     
+                        <td>$bal</td>
+                        
+                    </tr>
+        </table>
+
+        <table style='margin-top:20px;float:right;'>
+
+                <tr>
+                    <td>PRODUCT STATUS:</td> 
+                    <td>TRANSACTION $status</td>
+                </tr>
+                <tr>
+                    <td>SOLD BY:</td>
+                    <td>$rep</td>
+                </tr>
+            
+                <tr>
+                <td>PRODUCT CODE:</td>";
+                    $sele = $con->query("SELECT * FROM sales_registration ORDER BY (ID)DESC LIMIT 1 ");
+                    if ($sele) {
+                    while($dow = $sele->fetch_assoc()){
+                    echo "<td>$dow[ID]</td>";
+                        }
+                    }
+                echo "
+                </tr>
+        </table>
+
+        <p><button onclick='window.print()'>SALES RECEIPT</button></p>
+        </form>
+        </div>
+         ";
         
-        header("location:add_sales_admin.php?msg='sales uploaded'");
     }else {
         header("location:add_sales_admin.php?msg='sales not uploaded'");
     }
+
+
 }
 
 ?>
+
+

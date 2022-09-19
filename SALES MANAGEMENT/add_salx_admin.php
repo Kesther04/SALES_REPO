@@ -1,7 +1,7 @@
 
 <?php if ($_SERVER['REQUEST_METHOD']=="POST") { ?>
     <div class="dis">
-    <form name="prx-form" id="prx-form" action="add_sold_admin" method="post">
+    <form name="prx-form" id="prx-form" action="add_sold_admin.php" method="post">
         <table>
         <?php
          require("database_connection.php");

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: arial;
+}
+
+body{
+    margin:0;
+    width:100%;
+    background: whitesmoke;
+}
+
+
+.dis{
+    margin-top: 40px;
+    padding:20px;
+    width:100%;
+    height:530px;
+    color:black;
+    font-weight: bolder;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.dis h2{
+    width:100%;
+    text-align: center;
+    padding-bottom:20px;
+    color:black;
+    font-weight: bold;
+}
+
+
+.dis table tr td{
+    padding:5px;
+    padding-bottom: 20px;
+    font-size:15px;
+    color:black;
+    border:1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dis p{
+    width:100%;
+    float:left;
+}

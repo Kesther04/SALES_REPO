@@ -406,10 +406,12 @@ body{
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
 }
 
+
 .mini-sel-prod select{
     padding:10px;
     border-radius: 10px;
 }
+
 
 .mini-sel-prod select:focus{
     outline:none;
@@ -430,6 +432,7 @@ body{
     background: rgb(150,0,50);
     border:2px solid rgb(150,0,50);
 }
+
 
 .dis{
     margin-top: 40px;
