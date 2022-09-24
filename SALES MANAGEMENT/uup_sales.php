@@ -21,7 +21,7 @@
     $sel = $con->query("SELECT * FROM PRODUCT WHERE ID='$des[PRODUCT_ID]'");
     if($sel){
         while ($rac=$sel->fetch_assoc()) {
-            echo "<img src='images/$rac[PRODUCT_IMAGE]' style='height:250px;border-radius:20px;width:20%;'>";   
+            echo "<img src='images/$rac[PRODUCT_IMAGE]' id='dimg'>";   
         }
     }
             

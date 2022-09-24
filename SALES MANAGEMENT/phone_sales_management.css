@@ -1,0 +1,138 @@
+@media (max-width:375px) {
+    
+.dash-div{
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    width:17%;
+    height:800px;
+    padding:20px;
+    border:0px solid red;
+    position:fixed;top:0;
+    display: none;
+}
+
+.dash-div h2{
+    text-align: center;
+    color:goldenrod;
+    border:0px solid red;
+    padding:20px;
+
+}
+
+.dash-div h2:hover{
+    color:gold;
+    background-color: rgba(100,0,50,0.5);
+}
+
+.pre-div{
+    width:200%;
+    float:left;
+    margin:20px;
+}
+
+
+.pro-div{
+    width:100%;
+    margin:0px;
+    padding:20px;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:0px solid green;
+    border-radius:50px;
+    float:left;
+}
+
+
+.pro-div form table{
+    width:100%;
+
+}
+
+
+.pro-div form table tr td{
+    padding:0px;
+    width:50%;
+    border:0px solid red;
+    color:goldenrod;
+}
+
+
+.rec-div{
+    padding:20px;
+    width:100%;
+    height:1050px;
+    background:linear-gradient(to bottom,rgb(255,255,255),rgb(230,230,230));
+    border-radius:50px;
+    float:left;
+}
+
+
+.detail-divs{
+    float:left;
+    box-shadow: 0px 2px 15px 0px rgb(216, 216, 216);
+    width:100%;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border-radius:20px;
+    height:150px;
+    margin:20px;
+}
+
+
+.sales-main-tag{
+    width:200%;
+    height:900px;
+    margin-left:0%;
+    float:left;
+}
+
+.sel-prod{
+    visibility: visible;
+    border:1px solid green;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    padding:30px;
+    width:100%;
+    color:goldenrod;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.sel-prod button{
+    padding:10px;
+    border-radius:20px;
+    width:30%;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top:10px;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(100,0,50);
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+}
+
+
+.dis table tr td{
+    padding:5px;
+    padding-bottom: 20px;
+    font-size:15px;
+    
+}
+
+#dimg{
+    height:250px;
+    border-radius:20px;
+    width:50%;
+    margin-left: 150px;
+}
+
+.dis button{
+    padding:10px;
+    border-radius:20px;
+    width:30%;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top:20px;
+    color:goldenrod;
+    font-weight: bolder;
+    border:2px solid rgb(100,0,50);
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+}
+
+}

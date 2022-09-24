@@ -16,7 +16,7 @@ if(!isset($_SESSION['id'])){
     <?php  require("dashboard_header.php") ?>
 
     
-    <div>
+    <div  class="sales-main-tag">
             
 
             <?php

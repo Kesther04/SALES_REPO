@@ -15,11 +15,12 @@ if(!isset($_SESSION['id'])){
 
     <?php  require("dashboard_header.php") ?>
 
+    <section class="sales-main-tag">
     <?php 
          require("database_connection.php");
         $sel = $con->query("SELECT * FROM sales_registration GROUP BY DATE ORDER BY (ID)DESC");
         if ($sel) {
-            echo "<div class='sel-prod' style='margin-left:18%;width:80%;'>";
+            echo "<div class='sel-prod' >";
             echo "<div class='mini-sel-prod'>";
     ?>
         <form name="d-sales-form" action="daily_sales2.php" method="post">
@@ -43,5 +44,6 @@ if(!isset($_SESSION['id'])){
     ?>
 
     <?php require("full_daily_sales.php") ?>
+    </section>
 </body>
 </html>

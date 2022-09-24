@@ -32,7 +32,6 @@ body{
 }
 
 
-
 .but{
     width:90%;
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
@@ -276,9 +275,8 @@ body{
 }
 
 .dre-div{
-    width:80%;
-    float:left;
-    margin-left:18%;    
+    width:100%;
+    float:left;    
     margin-top:20px;
 }
 .re-div{
@@ -370,8 +368,12 @@ body{
     font-size: 25px;
 }
 
-.dis{
-    display:block;
+
+.sales-main-tag{
+    width:81%;
+    height:900px;
+    margin-left:18%;
+    float:left;
 }
 
 .sel-prod{
@@ -467,6 +469,11 @@ body{
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
 }
 
+#dimg{
+    height:250px;
+    border-radius:20px;
+    width:20%;
+}
 
 .dis button:hover{
     color:gold;

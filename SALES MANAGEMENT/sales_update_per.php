@@ -16,7 +16,7 @@ if(!isset($_SESSION['id'])){
     <?php  require("dashboard_header.php") ?>
 
     
-    <section style="width:81%;height:900px;margin-left:18%;">
+    <section class="sales-main-tag">
     
         <div class="sel-prod">
         
