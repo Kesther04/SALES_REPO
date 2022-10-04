@@ -10,6 +10,13 @@
 </head>
 <body>
 
+<div class="e-dash">
+<button id="b-dash-div" onclick="bolt()">DASHBOARD</button>
+<button id="c-dash-div" onclick="bort()">DASHBOARD</button>
+</div>
+
+
+<div id="dash-div">
 <div class="dash-div">
        <h2>DASHBOARD</h2>
 
@@ -22,6 +29,10 @@
        <button class="but"><a href="sales_update">UPDATE SALES</a></button>
        <button class="but" onclick="if(window.confirm('ARE YOU SURE YOU WANT TO LOG OUT')){window.location='per_sales_login_admin.php';}">LOG OUT</button>
 </div>
+</div>
+
+
+<script src="dash.js"></script>
 
 </body>
 </html>

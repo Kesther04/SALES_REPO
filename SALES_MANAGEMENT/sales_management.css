@@ -10,6 +10,22 @@ body{
     background: whitesmoke;
 }
 
+#b-dash-div{  
+    display: none;
+}
+
+#c-dash-div{  
+    display: none;
+}
+
+.e-dash{
+    display: none;
+}
+
+#dash-div{
+    display: block;
+}
+
 .dash-div{
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
     width:17%;
@@ -17,6 +33,7 @@ body{
     padding:20px;
     border:0px solid red;
     position:fixed;top:0;
+    display: block;
 }
 .dash-div h2{
     text-align: center;
