@@ -18,6 +18,7 @@ body{
     border-radius:60px;
     background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
     float:left;
+    
 }
 
 .msg-log{
