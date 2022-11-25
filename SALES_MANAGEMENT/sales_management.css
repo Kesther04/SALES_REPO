@@ -298,9 +298,11 @@ body{
 }
 .re-div{
     width:80%;
+    height: 100%;
     float:left;
     margin-left:18%;    
     margin-top:20px;
+    overflow: auto;
 }
 
 #beef td{

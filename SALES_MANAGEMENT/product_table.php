@@ -17,7 +17,7 @@ if(!isset($_SESSION['id'])){
 <?php require("dashboard_header22.php") ?>
 
 
-<div class="re-div">
+<div class="re-div" >
 <?php
  require("database_connection.php");
  
