@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: arial;
+}
+
+body{
+    margin:0px;
+    width:100%;
+    background: whitesmoke;
+    
+}
+
+h1{
+    color: goldenrod;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+
+h1:hover{
+    color: gold;
+}
+
+.dash-div{
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    width:40%;
+    height:600px;
+    padding:20px;
+    border:0px solid red;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-left: 500px;
+    border-radius:20px;
+}
+
+.dash-div h2{
+    text-align: center;
+    color:goldenrod;
+    border:0px solid red;
+    padding:20px;
+
+}
+
+.dash-div h2:hover{
+    color:gold;
+    background-color: rgba(100,0,50,0.5);
+}
+
+
+.but{
+    width:90%;
+    background: linear-gradient(to bottom,rgb(100,0,50),rgb(0,50,100));
+    border:2px solid rgb(100,0,50);
+    border-radius: 30px;
+    padding:15px;
+    color:goldenrod;
+    font-size: 15px;
+    margin:10px;
+    margin-top:20px;
+}
+
+.but:hover{
+    background: rgb(150,0,50);
+    color:gold;
+}
+
+.but a{
+    color:goldenrod;
+    text-decoration: none;
+}
+
+.but a:hover{
+    color:gold;
+}
